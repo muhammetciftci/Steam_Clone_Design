@@ -1,7 +1,7 @@
 # Techcareer-Android-Bootcamp-Homework-4
 
 
-<h1>Steam clone desing</h1>
+<h1>Steam clone desi</h1>
 
 <h3>Screenshots</h3>
 
