@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/shopFragment">
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.mtc.steam.homework4.ui.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.mtc.steam.homework4.ui.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/newspaperFragment"
+        android:name="com.mtc.steam.homework4.ui.NewspaperFragment"
+        android:label="fragment_newspaper"
+        tools:layout="@layout/fragment_newspaper" />
+    <fragment
+        android:id="@+id/steamGuardFragment"
+        android:name="com.mtc.steam.homework4.ui.SteamGuardFragment"
+        android:label="fragment_steam_guard"
+        tools:layout="@layout/fragment_steam_guard" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.mtc.steam.homework4.ui.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+</navigation>

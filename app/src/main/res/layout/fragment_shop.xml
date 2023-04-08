@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/steam_mainpage_background"
+    tools:context=".ui.ShopFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/steam_toolbar_color">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/steam_toolbar_light_color">
+
+
+                <ImageView
+                    android:id="@+id/steamLogoImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/steamlogo"
+                    app:tint="@color/steam_logo_gray_color" />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    style="@style/SearchViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:background="@color/steam_toolbar_light_color"
+                    android:backgroundTint="@color/steam_toolbar_light_color"
+                    app:searchIcon="@drawable/search_icon" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/menuShopSheetImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/more_icon"
+                app:tint="@color/steam_logo_gray_color" />
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:padding="2dp"
+                android:src="@drawable/mtc" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/steam_toolbar_color"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/menuTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:text="MENÜ"
+                android:fontFamily="@font/motivasansregular"
+                android:textAlignment="center"
+                android:textColor="@color/text_color_light_gray2"
+                app:drawableTint="@color/white"
+                app:drawableRightCompat="@drawable/arrow_down" />
+
+            <TextView
+                android:id="@+id/istekListesiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/motivasansregular"
+                android:text="İSTEK LİSTESİ"
+                android:textColor="@color/text_color_light_gray2" />
+
+            <TextView
+                android:id="@+id/cuzdanTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/motivasansregular"
+                android:text="CÜZDAN"
+                android:textAlignment="center"
+                android:textColor="@color/text_color_light_gray2" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/steam_mainpage_background_light"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ÖNE ÇIKANLAR VE TAVSİYE EDİLENLER"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/motivasansregular"
+                        android:textColor="@color/text_color_light_gray"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/highlightsRecylerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/steam_mainpage_background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ÖZEL TEKLİFLER"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:fontFamily="@font/motivasansregular"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/text_color_light_gray"/>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dahası"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:fontFamily="@font/motivasansregular"
+                            android:textColor="@color/text_color_light_gray3"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:drawableEnd="@drawable/next_icon"
+                            android:drawableTint="@color/text_color_light_gray3"/>
+                    </LinearLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/specialOffersRecylerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="STEAM'E GÖZ ATIN"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:fontFamily="@font/motivasansregular"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_color_light_gray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:fontFamily="@font/motivasansregular"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:background="@drawable/category_gradiant_background"
+                            android:text="YENİ ÇIKANLAR" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:fontFamily="@font/motivasansregular"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:background="@drawable/category_gradiant_background"
+                            android:text="ÖZEL FIRSATLAR" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:fontFamily="@font/motivasansregular"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:background="@drawable/category_gradiant_background"
+                            android:text="ÜCRETSİZ OYUNLAR" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:fontFamily="@font/motivasansregular"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:background="@drawable/category_gradiant_background"
+                            android:text="KULLANICI ETİKETLERİ" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

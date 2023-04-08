@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/steam_background_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.SteamGuardFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/steam_toolbar_color"
+                android:padding="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/return_icon"
+                    app:tint="@color/text_color_light_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/motivasansregular"
+                        android:gravity="center"
+                        android:text="STEAM GUARD"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_color_light_gray"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:padding="2dp"
+                    android:src="@drawable/mtc" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@color/steam_toolbar_color"
+                android:fontFamily="@font/motivasansregular"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Şu hesapla giriş yapmak için bir Steam QR kodu \n tarayın:"
+                android:textAlignment="center"
+                android:textColor="@color/text_color_light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp">
+
+
+                <ImageView
+                    android:id="@+id/profileImageView2"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:padding="2dp"
+                    android:src="@drawable/mtc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/cuzdan_bakiye_text_color"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/motivasansregular"
+                        android:paddingHorizontal="3dp"
+                        android:text="MTC"
+                        android:textColor="@color/text_color_light_gray"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="3dp"
+                        android:text="muhammet_ciftci"
+                        android:textColor="@color/text_color_light_gray2" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/profileImageView3"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@color/cuzdan_bakiye_text_color"
+                    android:padding="2dp"
+                    android:src="@drawable/arrow_down" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@color/steam_toolbar_color"
+                android:fontFamily="@font/motivasansregular"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Bir QR kodunu taramak için bu uygulamanın\n kamera erişimine ihtiyacı vardır."
+                android:textAlignment="center"
+                android:textColor="@color/text_color_light_gray" />
+
+            <ImageView
+                android:layout_width="300sp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/qr_image" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:paddingHorizontal="15dp"
+        android:background="@drawable/category_gradiant_background"
+        android:fontFamily="@font/motivasansregular"
+        android:text="Steam Guard kodunu göster"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

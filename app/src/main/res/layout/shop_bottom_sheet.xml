@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/steam_toolbar_light_color"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/radius_background"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steam'e Hoş geldiniz"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/text_color_gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/radius_background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Paylaş"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/share_icon"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/text_color_light_gray"
+        android:textColor="@color/text_color_light_gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/radius_background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Yenile"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/refresh_icon"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/text_color_light_gray"
+        android:textColor="@color/text_color_light_gray"/>
+
+
+</LinearLayout>

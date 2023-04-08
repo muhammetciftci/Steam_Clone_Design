@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/steam_background_1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.MenuFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/steam_toolbar_color"
+                android:padding="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/return_icon"
+                    app:tint="@color/text_color_light_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/motivasansregular"
+                        android:gravity="center"
+                        android:text="MENÜ"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_color_light_gray"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:padding="2dp"
+                    android:src="@drawable/mtc" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mağaza (27,27 TL)"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/text_color_light_gray"
+                    app:drawableStartCompat="@drawable/magaza_label_icon"
+                    android:drawableEnd="@drawable/arrow_down"
+                    android:drawablePadding="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#2794959A" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Haberler"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/text_color_light_gray"
+                    app:drawableStartCompat="@drawable/newspaper_icon"
+                    android:drawableTint="@color/text_color_light_gray"
+                    android:drawablePadding="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#2794959A" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Steam Guard"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/text_color_light_gray"
+                    app:drawableStartCompat="@drawable/security"
+                    android:drawableTint="@color/text_color_light_gray"
+                    android:drawablePadding="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#2794959A" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Haberler"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/text_color_light_gray"
+                    app:drawableStartCompat="@drawable/newspaper_icon"
+                    android:drawableTint="@color/text_color_light_gray"
+                    android:drawablePadding="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#2794959A" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Onaylamalar"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/text_color_light_gray"
+                    app:drawableStartCompat="@drawable/check_icon"
+                    android:drawableTint="@color/text_color_light_gray"
+                    android:drawablePadding="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#2794959A" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kütüphane"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/text_color_light_gray"
+                    app:drawableStartCompat="@drawable/library_icon"
+                    android:drawableTint="@color/text_color_light_gray"
+                    android:drawablePadding="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#2794959A" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Topluluk"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color_light_gray"
+                    app:drawableStartCompat="@drawable/social_icon"
+                    android:drawableTint="@color/text_color_light_gray"
+                    android:drawableEnd="@drawable/arrow_down"
+                    android:drawablePadding="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#2794959A" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sohbet"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color_light_gray"
+                    app:drawableStartCompat="@drawable/baseline_chat_24"
+                    android:drawableTint="@color/text_color_light_gray"
+                    android:drawablePadding="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#2794959A" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Bu uygulamayla ilgili geri bildirimde bulunun"
+                    android:textColor="@color/steam_toolbar_extra_light_color"
+                    android:textSize="16sp"
+                    android:drawablePadding="10dp"
+                    app:drawableStartCompat="@drawable/sound_icon"
+                    app:drawableTint="@color/steam_toolbar_extra_light_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Ayarlar"
+                    android:textColor="@color/steam_toolbar_extra_light_color"
+                    android:textSize="16sp"
+                    android:drawablePadding="10dp"
+                    app:drawableStartCompat="@drawable/setting_icon"
+                    app:drawableTint="@color/steam_toolbar_extra_light_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Destek"
+                    android:textColor="@color/steam_toolbar_extra_light_color"
+                    android:textSize="16sp"
+                    android:drawablePadding="10dp"
+                    app:drawableStartCompat="@drawable/support_icon"
+                    app:drawableTint="@color/steam_toolbar_extra_light_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Steam Link uygulamasını yükleyin"
+                    android:textColor="@color/steam_toolbar_extra_light_color"
+                    android:textSize="16sp"
+                    android:drawablePadding="10dp"
+                    app:drawableStartCompat="@drawable/game_icon"
+                    app:drawableTint="@color/steam_toolbar_extra_light_color" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

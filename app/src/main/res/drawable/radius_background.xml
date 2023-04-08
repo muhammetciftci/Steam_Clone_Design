@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/steam_toolbar_extra_light_color"></solid>
+    <corners android:radius = "100dp" android:type = "linear"/>
+
+</shape>

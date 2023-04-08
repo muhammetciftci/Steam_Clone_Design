@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.NewspaperFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/steam_toolbar_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/steam_toolbar_color"
+                android:padding="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/return_icon"
+                    app:tint="@color/text_color_light_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/motivasansregular"
+                        android:gravity="center"
+                        android:text="HABERLER"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_color_light_gray"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/menuShopSheetImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:src="@drawable/more_icon"
+                        app:tint="@color/steam_logo_gray_color" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:padding="2dp"
+                    android:src="@drawable/mtc" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_color_gray2"
+                android:textColor="@color/text_color_light_gray"
+                android:text="BUGÜN"
+                android:textSize="18dp"
+                android:fontFamily="@font/motivasansregular"
+                android:padding="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/newspaper_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/newspaper_background"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginHorizontal="10dp"
+                        android:src="@drawable/thelastofus"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Last of Us™ Part I"
+                        android:fontFamily="@font/motivasansregular"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/text_color_gray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Last of Us Part I v1.0.2.0 Patch Notes"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/motivasansregular"
+                        android:textSize="22sp"
+                        android:layout_marginHorizontal="10dp"
+                        android:textColor="@color/text_color_light_gray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A patch for The Last of Us Part I is now live. This update addresses fixes for performance, user experience, visuals, and more."
+                        android:fontFamily="@font/motivasansregular"
+                        android:textSize="13sp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/text_color_light_gray2"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#6d99b7"
+                            android:textSize="13dp"
+                            android:text="DÜZENLİ GÜNCELLEME"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/motivasansregular"
+                            android:textSize="13sp"
+                            android:text="1 SAAT ÖNCE"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/text_color_gray"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="755"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_gray"
+                        android:layout_marginHorizontal="20dp"
+                        app:drawableStartCompat="@drawable/like_icon"
+                        app:drawableTint="@color/text_color_gray"
+                        android:drawablePadding="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_gray"
+                        android:layout_marginHorizontal="20dp"
+                        app:drawableStartCompat="@drawable/comment_icon"
+                        app:drawableTint="@color/text_color_gray"
+                        android:drawablePadding="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_gray"
+                        android:layout_marginHorizontal="20dp"
+                        app:drawableStartCompat="@drawable/more_icon2"
+                        app:drawableTint="@color/text_color_gray"
+                        android:drawablePadding="10dp"/>
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

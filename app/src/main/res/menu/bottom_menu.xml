@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/shopFragment" android:icon="@drawable/magaza_label_icon"
+        android:title=""></item>
+    <item android:id="@+id/newspaperFragment" android:icon="@drawable/newspaper_icon"
+        android:title=""></item>
+    <item android:id="@+id/steamGuardFragment" android:icon="@drawable/security"
+        android:title=""></item>
+    <item android:id="@+id/notificationFragment" android:icon="@drawable/notification_icon"
+        android:title=""></item>
+    <item android:id="@+id/menuFragment" android:icon="@drawable/menu_icon"
+        android:title=""></item>
+
+</menu>

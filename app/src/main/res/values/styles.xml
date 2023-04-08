@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@color/steam_logo_gray_color</item>
+        <item name="android:background">@color/steam_toolbar_light_color</item>
+    </style>
+
+    <style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="itemTextColor">@color/steam_toolbar_color</item>
+        <item name="itemIconTint">@color/steam_toolbar_color</item>
+    </style>
+
+
+</resources>
